@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/baseline_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        android:title="Search"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+    <item
+        android:id="@+id/sort_by"
+        android:icon="@drawable/baseline_sort"
+        android:title="Sort By"
+        app:showAsAction="ifRoom">
+
+        <menu>
+
+
+            <item
+                android:id="@+id/sort"
+                android:title="Sort"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/sort_by_name"
+                android:title="By Name"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/sort_by_date"
+                android:title="By Date"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/sort_by_size"
+                android:title="By Size"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>
